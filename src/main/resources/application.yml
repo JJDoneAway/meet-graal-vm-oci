@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://identity.oraclecloud.com/
+          authorities-claim-name: clientAppRoles
+          principal-claim-name: ca_name
+          authority-prefix: ""
+          jwk-set-uri: https://idcs-450bf49ec3c8411fbd821c0db20d06ae.identity.oraclecloud.com/admin/v1/SigningCert/jwk
+
+logging:
+  level:
+    root: INFO
